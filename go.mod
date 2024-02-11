@@ -7,6 +7,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/mattn/go-sqlite3 v1.14.22
 	github.com/spf13/cobra v1.8.0
+	github.com/treblle/treblle-go v0.7.2
 )
 
 require (

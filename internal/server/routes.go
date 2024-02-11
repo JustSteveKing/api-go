@@ -4,12 +4,13 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/juststeveking/api/internal/middleware"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {
 	r := gin.Default()
 
-	r.Use()
+	r.Use(middleware.Treblle())
 
 	r.GET("/", s.HelloWorldHandler)
 	r.GET("/health", s.healthHandler)
